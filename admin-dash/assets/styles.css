@@ -1,0 +1,371 @@
+body.dark-mode {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e4f;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.signed-in-as {
+    margin-right: 15px;
+    font-size: 0.9em;
+    color: #b3b3b3;
+}
+
+.perms {
+    margin-right: 15px;
+    font-size: 0.9em;
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.logout-button {
+    padding: 8px 15px;
+    background-color: #4e73df;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #2e59d9;
+}
+
+h1, h2 {
+    color: #4e73df;
+    margin-bottom: 20px;
+}
+
+.dashboard-section {
+    background-color: #2e2e4f;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th {
+    background-color: #4e73df;
+    color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+}
+
+td {
+    background-color: #3a3a5f;
+    padding: 15px;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+th.sortable {
+    cursor: pointer;
+}
+th.sortable::after {
+    content: '  ↕';
+    font-size: 0.8em;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4e73df;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e59d9;
+}
+
+a button {
+    padding: 10px 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #3a3a5f;
+    color: #ffffff;
+    border: 1px solid #4e73df;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #4e73df;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e59d9;
+}
+
+.transaction {
+    background-color: #3a3a5f;
+    border: 1px solid #4e73df;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.delete-button {
+    background-color: #e74a3b;
+    color: #ffffff;
+}
+
+.delete-button:hover {
+    background-color: #d52a1a;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    margin: 0 10px;
+}
+
+#page-info {
+    margin: 0 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-form {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-button {
+    margin: 0 10px;
+}
+
+.page-info {
+    display: flex;
+    align-items: center;
+}
+
+
+.refund-button {
+    background-color: #ffa500;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.refund-button:hover {
+    background-color: #ff8c00;
+}
+
+.refunded-row {
+    background-color: #ffeeee;
+}
+
+.payment-status {
+    font-weight: bold;
+}
+
+.payment-status.refunded {
+    color: #ff4444;
+}
+
+.payment-status.paid {
+    color: #44aa44;
+}
+
+.payment-status.not.paid {
+    color: #aaaaaa;
+}
+
+.reset-a-search {
+    color: #4e73df;
+    text-decoration: none;
+}
+
+.delete-button.disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.delete-button.disabled:hover {
+    background-color: #cccccc;
+}
+
+
+
+.styled-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #3a3a5f;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.styled-dropdown:hover {
+    border-color: #aaa;
+}
+
+.styled-dropdown:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.styled-dropdown option {
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+
+#statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+#statistics h2 {
+    grid-column: 1 / -1;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #3a3a5f;
+    border: 1px solid #4e73df;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    min-height: 150px;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.stat h3 i {
+    font-size: 1.5em;
+}
+
+.stat p {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#column-filter {
+    margin-bottom: 20px;
+}
+
+#column-checkboxes {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+#column-checkboxes label {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#column-checkboxes input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#transactionValueChart {
+    max-width: 23%;
+    max-height: 33vh;
+}
+#donationsChart {
+    max-width: 46%;
+    max-height: 33vh;
+}
+
+#transactionCountChart {
+    max-width: 30%;
+    max-height: 33vh;
+}
+
+.chart-container {
+    display: flex;
+
+}
